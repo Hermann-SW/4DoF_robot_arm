@@ -5,7 +5,7 @@
 # requires SNES joystick connected to Raspberry USB, pigpio library installed
 #
 js=/tmp/joystick
-if [ ! -f $js ]; then sed -n "/^\/\*\*$/,\$p" $0 > $js.c; gcc $js.c -o $js; fi
+if [ ! -f $js ]; then sed -n "/^\/\*\*$/,\$p" $0 | gcc -x c - -o $js; fi
 
 g=1500
 l=1500
