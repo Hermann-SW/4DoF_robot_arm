@@ -1,9 +1,9 @@
 #!/bin/bash
-// contains and uses this version of Jason WHite's joystick.c at bottom
-// https://gist.github.com/jasonwhite/c5b2048c15993d285130/eb3bcd6e1cd88002d21764b9965d075eceaf4b83
-//
-// requires SNES joystick connected to Raspberry USB, pigpio library installed
-//
+# contains and uses this version of Jason White's joystick.c at bottom
+# https://gist.github.com/jasonwhite/c5b2048c15993d285130/eb3bcd6e1cd88002d21764b9965d075eceaf4b83
+#
+# requires SNES joystick connected to Raspberry USB, pigpio library installed
+#
 js=/tmp/joystick
 if [ ! -f $js ]; then sed -n "/^\/\*\*$/,\$p" $0 > $js.c; gcc $js.c -o $js; fi
 
@@ -21,10 +21,10 @@ pigs s 8 $g; pigs s 9 $u; pigs s 10 $l; pigs s 11 $p
 while IFS= read -r line; do
     case $line in
         "Axis 0 at (-32767,      0)")
-            let p=p-d
+            let p=p+d
         ;;
         "Axis 0 at ( 32767,      0)")
-            let p=p+d
+            let p=p-d
         ;;
         "Axis 0 at (     0, -32767)")
             let l=l+d
