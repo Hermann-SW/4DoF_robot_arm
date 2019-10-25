@@ -16,7 +16,12 @@ Work in progress ... here some teaser animations:
 
 ## Construction
 
-TBD
+There are no instructions for building the robot arm in packet received, nor on [product website](https://www.banggood.com/Small-Hammer-3D-Print-DIY-4DOF-RC-Robot-Arm-Kit-With-SG90-Servos-p-1451689.html). But building was possible by looking at the many photos of robot arm shown on product website.  
+
+I had to do a lot of sandpaper work in order to get movable gripper parts slide on the board screwed onto top servo motor.  
+
+What was really bad is that the diameter of the gearwheel connector did not fit into the hole of 3D printed robot arm ground plate. I did cut the one arm of gearwheel connector, then did put it on ground servo gearwheel, and screwed it with small screw. Then I took out my Dremel and removed material as long as needed to be able to press the robot arm ground plate on the prepared gearwheel connector. For seeing details of 5MP photo you have to right click:  
+<img height="432" src="res/IMG_201019_163940.jpg"/>
 
 ## Wiring diagram
 
