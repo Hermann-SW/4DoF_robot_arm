@@ -39,6 +39,35 @@ This is connection diagram:
 Tool [tools/gamepad](tools/gamepad) allows to control 4DoF robot arm with (SNES) gamepad.  
 All 8 buttons as well as all 4 axis buttons have functions.
 
+Hard coded sample script can be easily done using pigpio library's [pigs command](http://abyz.me.uk/rpi/pigpio/pigs.html). This is the script executed for die picking demo, Pi GPIO8/9/10/11 controls robot arm gripper/top/bottom/pan servo:
+
+    pi@raspberrypi3Bplus:~ $ cat doit
+    #!/bin/sh
+    pigs s 11 1500; pigs s 8 2100; sleep 0.5
+    pigs s 10 2500; pigs s 9 1900; sleep 0.5
+    pigs s 8 1500; sleep 0.5
+    pigs s 9 1500; pigs s 10 1500; sleep 0.5
+    pigs s 9 2500; pigs s 11 2500; sleep 0.5
+    pigs s 8 2200
+    pi@raspberrypi3Bplus:~ $
+
+![die.anim.gif](res/die.anim.gif) 
+
+These are the pigs commands for what you see in below animation:
+
+    ...
+    pigs s 11 2000; pigs s 10 2000; pigs s 9 2000; pigs s 8 2000; sleep 0.6
+    pigs s 11 1000; pigs s 10 1000; pigs s 9 1000; pigs s 8 1000; sleep 0.6
+    pigs s 11 1500; pigs s 10 1500; pigs s 9 1500; pigs s 8 1500; sleep 2
+    pigs s 11 1000; pigs s 10 1000; pigs s 9 1000; pigs s 8 1000; sleep 0.3
+    pigs s 11 1500; pigs s 10 1500; pigs s 9 1500; pigs s 8 1500; sleep 0.3
+    pigs s 11 2000; pigs s 10 2000; pigs s 9 2000; pigs s 8 2000; sleep 0.3
+    pigs s 11 1000; pigs s 10 1000; pigs s 9 1000; pigs s 8 1000; sleep 0.3
+    pigs s 11 1500; pigs s 10 1500; pigs s 9 1500; pigs s 8 1500
+    ...
+
+![fast.anim.gif](res/fast.anim.gif)
+
 ## Adding camera near gripper
 
 TBD
