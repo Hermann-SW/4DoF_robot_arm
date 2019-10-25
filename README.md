@@ -23,6 +23,8 @@ I had to do a lot of sandpaper work in order to get movable gripper parts slide 
 What was really bad is that the diameter of the gearwheel connector did not fit into the hole of 3D printed robot arm ground plate. I did cut the one arm of gearwheel connector, then did put it on ground servo gearwheel, and screwed it with small screw. Then I took out my Dremel and removed material as long as needed to be able to press the robot arm ground plate on the prepared gearwheel connector. For seeing details of 5MP photo you have to right click:  
 <img height="432" src="res/IMG_201019_163940.jpg"/>
 
+Even really firmly screwing the big 3D printed gripper gearwheel onto the small top servo gearwheel leaves too much play for recreatable big gearwheel position wrt servo motor position. I solved that issue by putting two drops of superglue onto big 3D printed gearwheel before connecting with small servo gearwheel -- not perfect, but works.
+
 ## Wiring diagram
 
 A colleague told me to use powerrail in order to avoid voltage drop problems:  
