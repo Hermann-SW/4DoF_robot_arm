@@ -66,7 +66,8 @@ Hard coded sample script can be easily done using pigpio library's [pigs command
 
 #### 4 servos moving simultaneously
 
-These are the pigs commands for what you see in below animation:
+These are the pigs commands for what you see in below animation, from:  
+https://www.youtube.com/watch?v=qc0d_gW480I
 
     ...
     pigs s 11 2000; pigs s 10 2000; pigs s 9 2000; pigs s 8 2000; sleep 0.6
