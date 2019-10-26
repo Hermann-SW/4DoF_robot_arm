@@ -7,7 +7,7 @@
   * [tools/gamepad](#toolsgamepad)
   * [pigpio pigs scripts](#pigpio-pigs-scripts)
     * [die picker](#die-picker)
-    * [4 servos moving simulatneously](#4-servos-moving-simultaneously)
+    * [4 servos moving simultaneously](#4-servos-moving-simultaneously)
 * [Adding camera near gripper](#adding-camera-near-gripper)
 
 ## Introduction
@@ -64,7 +64,7 @@ Hard coded sample script can be easily done using pigpio library's [pigs command
 
 ![die.anim.gif](res/die.anim.gif) 
 
-#### 4 servos moving simulatneously
+#### 4 servos moving simultaneously
 
 These are the pigs commands for what you see in below animation:
 
