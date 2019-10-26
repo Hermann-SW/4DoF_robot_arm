@@ -48,9 +48,19 @@ All 8 buttons as well as all 4 axis buttons have functions:
 
 ### pigpio pigs scripts
 
+Hard coded sample scripts can be easily done using pigpio library's [pigs command](http://abyz.me.uk/rpi/pigpio/pigs.html), especially: 
+
+    ...
+    S/SERVO u v - Set GPIO servo pulsewidth
+    
+    This command starts servo pulses of v microseconds on GPIO u.  
+    ...
+
+Setting of 500/1500/2500 corresponds to 0°/90°/180° for servo motor.
+
 #### die picker
 
-Hard coded sample script can be easily done using pigpio library's [pigs command](http://abyz.me.uk/rpi/pigpio/pigs.html). This is the script executed for die picking demo, Pi GPIO8/9/10/11 controls robot arm gripper/top/bottom/pan servo:
+This is the script executed for die picking demo, Pi GPIO8/9/10/11 controls robot arm gripper/top/bottom/pan servo:
 
     pi@raspberrypi3Bplus:~ $ cat doit
     #!/bin/sh
