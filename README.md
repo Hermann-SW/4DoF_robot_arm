@@ -94,4 +94,11 @@ https://www.youtube.com/watch?v=qc0d_gW480I
 
 ## Adding camera near gripper
 
+Options are v1 mini camera sensor (that connects to Pi Zero only)  
+![v1 mini camera](res/v1.mini_camera.png)
+
+or v2 repair replacement camera sensor that needs a working original v2 camera board (for crypto chip)  
+![v2 repair replacement camera](res/v2.repair_replacement_camera.png)
+
 TBD
+
