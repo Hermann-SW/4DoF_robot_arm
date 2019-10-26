@@ -43,7 +43,8 @@ This is connection diagram:
 ### tools/gamepad
 
 Tool [tools/gamepad](tools/gamepad) allows to control 4DoF robot arm with (SNES) gamepad.  
-All 8 buttons as well as all 4 axis buttons have functions:  
+All 8 buttons as well as all 4 axis buttons have functions.  
+Delta 1000/100/10 does 90°/9°/0.9° changes to servos:  
 ![](res/snes.gamepad.png)
 
 ### pigpio pigs scripts
