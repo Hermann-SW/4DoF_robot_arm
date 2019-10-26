@@ -59,9 +59,11 @@ Hard coded sample scripts can be easily done using pigpio library's [pigs comman
 
 Setting of 500/1500/2500 corresponds to 0°/90°/180° for servo motor.
 
+Pi GPIO8/9/10/11 controls robot arm gripper/top/bottom/pan servo.
+
 #### die picker
 
-This is the script executed for die picking demo, Pi GPIO8/9/10/11 controls robot arm gripper/top/bottom/pan servo:
+This is the script executed for die picking demo:  
 
     pi@raspberrypi3Bplus:~ $ cat doit
     #!/bin/sh
@@ -73,12 +75,12 @@ This is the script executed for die picking demo, Pi GPIO8/9/10/11 controls robo
     pigs s 8 2200
     pi@raspberrypi3Bplus:~ $
 
+https://www.youtube.com/watch?v=iwZIn6fQfMk  
 ![die.anim.gif](res/die.anim.gif) 
 
 #### 4 servos moving simultaneously
 
-These are the pigs commands for what you see in below animation, from:  
-https://www.youtube.com/watch?v=qc0d_gW480I
+These are the pigs commands for what you see in below animation:  
 
     ...
     pigs s 11 2000; pigs s 10 2000; pigs s 9 2000; pigs s 8 2000; sleep 0.6
@@ -91,6 +93,7 @@ https://www.youtube.com/watch?v=qc0d_gW480I
     pigs s 11 1500; pigs s 10 1500; pigs s 9 1500; pigs s 8 1500
     ...
 
+https://www.youtube.com/watch?v=qc0d_gW480I  
 ![fast.anim.gif](res/fast.anim.gif)
 
 ## Adding camera near gripper
