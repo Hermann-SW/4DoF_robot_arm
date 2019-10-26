@@ -12,7 +12,7 @@
 
 ## Introduction
 
-This blog is on this 15$ [4DoF robot arm](https://www.banggood.com/Small-Hammer-3D-Print-DIY-4DOF-RC-Robot-Arm-Kit-With-SG90-Servos-p-1451689.html).
+Repo for this 15$ [4DoF robot arm](https://www.banggood.com/Small-Hammer-3D-Print-DIY-4DOF-RC-Robot-Arm-Kit-With-SG90-Servos-p-1451689.html).
 
 Work in progress ... here some teaser animations:
 
