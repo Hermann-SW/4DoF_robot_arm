@@ -4,6 +4,10 @@
 * [Construction](#construction)
 * [Wiring diagram](#wiring-diagram)
 * [Tools](#tools)
+  * [tools/gamepad](#toolsgamepad)
+  * [pigpio pigs scripts](#pigpio-pigs-scripts)
+    * [die picker](#die-picker)
+    * [4 servos moving simulatneously](#4-servos-moving-simultaneously)
 * [Adding camera near gripper](#adding-camera-near-gripper)
 
 ## Introduction
@@ -36,8 +40,15 @@ This is connection diagram:
 
 ## Tools
 
+### tools/gamepad
+
 Tool [tools/gamepad](tools/gamepad) allows to control 4DoF robot arm with (SNES) gamepad.  
-All 8 buttons as well as all 4 axis buttons have functions.
+All 8 buttons as well as all 4 axis buttons have functions:  
+![](res/snes.gamepad.png)
+
+### pigpio pigs scripts
+
+#### die picker
 
 Hard coded sample script can be easily done using pigpio library's [pigs command](http://abyz.me.uk/rpi/pigpio/pigs.html). This is the script executed for die picking demo, Pi GPIO8/9/10/11 controls robot arm gripper/top/bottom/pan servo:
 
@@ -52,6 +63,8 @@ Hard coded sample script can be easily done using pigpio library's [pigs command
     pi@raspberrypi3Bplus:~ $
 
 ![die.anim.gif](res/die.anim.gif) 
+
+#### 4 servos moving simulatneously
 
 These are the pigs commands for what you see in below animation:
 
